@@ -1,0 +1,40 @@
+{
+ "name": "gcc",
+ "version": "15.3.0-3",
+ "license": "GPL-3.0+ with GCC Runtime Library Exception",
+ "homepage": "https://gcc.gnu.org",
+ "licenses": [
+  "LICENSE",
+  "LICENSE.RUNTIME",
+  "LICENSE.LIB",
+  "NOTICE.txt"
+ ],
+ "sources": [
+  "gcc-15.3.0.tar.xz",
+  "gmp-6.2.1.tar.bz2",
+  "mpfr-4.1.0.tar.bz2",
+  "mpc-1.2.1.tar.gz",
+  "isl-0.24.tar.bz2"
+ ],
+ "desc": "GCC 15.3.0: gcc, g++, cpp (C and C++ compilers; 64-bit tOS)",
+ "file": "gcc-15.3.0-3.tpkg",
+ "size": 47899203,
+ "sha256": "59ebc0230cd1d69ab33ae5e4ab63847d4e8e0095bae6270eaa71d07f41f3e696",
+ "unpacked": 134653187,
+ "min_build": 615,
+ "depends": [
+  "binutils",
+  "glibc-dev",
+  "make"
+ ],
+ "commands": {
+  "gcc": "bin/gcc",
+  "cc": "bin/gcc",
+  "g++": "bin/g++",
+  "c++": "bin/g++",
+  "cpp": "bin/cpp",
+  "gcc-ar": "bin/gcc-ar",
+  "gcc-nm": "bin/gcc-nm",
+  "gcc-ranlib": "bin/gcc-ranlib"
+ }
+}
